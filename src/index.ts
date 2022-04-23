@@ -43,8 +43,38 @@ let d: Color;
 
 enum ColorTexto {
   Rojo = "Rojo",
-  Verder = "Verde",
+  Verder = 22,
   Azul = "Azul",
 }
 
-let otro = ColorTexto;
+let colores = {
+  Rojo: "Rojo",
+  Verder: "Verder",
+  Azul: "Azul",
+};
+
+let otro: ColorTexto;
+otro = ColorTexto.Rojo;
+let colorNuevo = colores.Rojo;
+
+let nombre3: any;
+function getValue(nombre: string): any {
+  return nombre;
+}
+nombre3 = 5;
+
+nombre3 = getValue("Max");
+
+function vacia(): void {
+  console.log("Vacia");
+}
+
+null;
+undefined;
+
+let numero;
+let numero4: number;
+
+numero = 3;
+
+let valor999;
